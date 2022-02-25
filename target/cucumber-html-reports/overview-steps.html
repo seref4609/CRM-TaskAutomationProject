@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>25 Feb 2022, 02:50</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.click_to_send_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="4746883325">4.746</td>
+              <td class="duration" data-value="4746883325">6.325</td>
+              <td class="duration" data-value="18987533300">18.987</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()</td>
+              <td>10</td>
+              <td class="duration" data-value="8790401200">8.790</td>
+              <td class="duration" data-value="8790401200">14.135</td>
+              <td class="duration" data-value="87904012000">1:27.904</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.userClickOnVisualEditor()</td>
+              <td>1</td>
+              <td class="duration" data-value="5276642100">5.276</td>
+              <td class="duration" data-value="5276642100">5.276</td>
+              <td class="duration" data-value="5276642100">5.276</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_can_add_a_checklist_item_by_clicking_on_the_checkmark()</td>
+              <td>2</td>
+              <td class="duration" data-value="254313600">0.254</td>
+              <td class="duration" data-value="254313600">0.260</td>
+              <td class="duration" data-value="508627200">0.508</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_can_add_checklistItem_on_Things_to_do()</td>
+              <td>1</td>
+              <td class="duration" data-value="7423426300">7.423</td>
+              <td class="duration" data-value="7423426300">7.423</td>
+              <td class="duration" data-value="7423426300">7.423</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_can_add_following_on_Things_to_do(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10752141700">10.752</td>
+              <td class="duration" data-value="10752141700">10.752</td>
+              <td class="duration" data-value="10752141700">10.752</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_can_click_the_delete_mark()</td>
+              <td>1</td>
+              <td class="duration" data-value="2450773400">2.450</td>
+              <td class="duration" data-value="2450773400">2.450</td>
+              <td class="duration" data-value="2450773400">2.450</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_clean_the_input_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="154648000">0.154</td>
+              <td class="duration" data-value="154648000">0.154</td>
+              <td class="duration" data-value="154648000">0.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_VIEW_TASK()</td>
+              <td>2</td>
+              <td class="duration" data-value="4890403650">4.890</td>
+              <td class="duration" data-value="4890403650">5.072</td>
+              <td class="duration" data-value="9780807300">9.780</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12823132300">12.823</td>
+              <td class="duration" data-value="12823132300">12.823</td>
+              <td class="duration" data-value="12823132300">12.823</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)</td>
+              <td>10</td>
+              <td class="duration" data-value="2153117140">2.153</td>
+              <td class="duration" data-value="2153117140">2.297</td>
+              <td class="duration" data-value="21531171400">21.531</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_checkbox(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2175463200">2.175</td>
+              <td class="duration" data-value="2175463200">2.175</td>
+              <td class="duration" data-value="2175463200">2.175</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_overdateSelect()</td>
+              <td>1</td>
+              <td class="duration" data-value="193441000">0.193</td>
+              <td class="duration" data-value="193441000">0.193</td>
+              <td class="duration" data-value="193441000">0.193</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_Finish_box()</td>
+              <td>1</td>
+              <td class="duration" data-value="139193200">0.139</td>
+              <td class="duration" data-value="139193200">0.139</td>
+              <td class="duration" data-value="139193200">0.139</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_StarttaskBox()</td>
+              <td>1</td>
+              <td class="duration" data-value="7928540400">7.928</td>
+              <td class="duration" data-value="7928540400">7.928</td>
+              <td class="duration" data-value="7928540400">7.928</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1876089900">1.876</td>
+              <td class="duration" data-value="1876089900">1.876</td>
+              <td class="duration" data-value="1876089900">1.876</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_dateFinish()</td>
+              <td>1</td>
+              <td class="duration" data-value="2348196800">2.348</td>
+              <td class="duration" data-value="2348196800">2.348</td>
+              <td class="duration" data-value="2348196800">2.348</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_dateStart()</td>
+              <td>1</td>
+              <td class="duration" data-value="136705100">0.136</td>
+              <td class="duration" data-value="136705100">0.136</td>
+              <td class="duration" data-value="136705100">0.136</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_deadlinebox()</td>
+              <td>2</td>
+              <td class="duration" data-value="5258190400">5.258</td>
+              <td class="duration" data-value="5258190400">10.285</td>
+              <td class="duration" data-value="10516380800">10.516</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_enter_a_title_on_Things_to_do_message_box()</td>
+              <td>3</td>
+              <td class="duration" data-value="5420291200">5.420</td>
+              <td class="duration" data-value="5420291200">5.492</td>
+              <td class="duration" data-value="16260873600">16.260</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_seleckt_start()</td>
+              <td>1</td>
+              <td class="duration" data-value="110632600">0.110</td>
+              <td class="duration" data-value="110632600">0.110</td>
+              <td class="duration" data-value="110632600">0.110</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_select_date_by_using_date_pickers()</td>
+              <td>1</td>
+              <td class="duration" data-value="2556008000">2.556</td>
+              <td class="duration" data-value="2556008000">2.556</td>
+              <td class="duration" data-value="2556008000">2.556</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_select_overdue_date_by_using_date_pickers()</td>
+              <td>1</td>
+              <td class="duration" data-value="538004400">0.538</td>
+              <td class="duration" data-value="538004400">0.538</td>
+              <td class="duration" data-value="538004400">0.538</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.user_should_be_able_to_click_on_the_button(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="9139202033">9.139</td>
+              <td class="duration" data-value="9139202033">16.009</td>
+              <td class="duration" data-value="27417606100">27.417</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verifyThatTaskHasBeenCreated()</td>
+              <td>1</td>
+              <td class="duration" data-value="7109818400">7.109</td>
+              <td class="duration" data-value="7109818400">7.109</td>
+              <td class="duration" data-value="7109818400">7.109</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verifyThatTheEditorTextBarDisplaysOnTopOfTheMessageBox()</td>
+              <td>1</td>
+              <td class="duration" data-value="249716900">0.249</td>
+              <td class="duration" data-value="249716900">0.249</td>
+              <td class="duration" data-value="249716900">0.249</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_message_display_on_pagetitle()</td>
+              <td>1</td>
+              <td class="duration" data-value="28114679500">28.114</td>
+              <td class="duration" data-value="28114679500">28.114</td>
+              <td class="duration" data-value="28114679500">28.114</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_separator_line_display_on_the_checklist_items()</td>
+              <td>1</td>
+              <td class="duration" data-value="5002253400">5.002</td>
+              <td class="duration" data-value="5002253400">5.002</td>
+              <td class="duration" data-value="5002253400">5.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_system_date_Task_is_overdue_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="28122159000">28.122</td>
+              <td class="duration" data-value="28122159000">28.122</td>
+              <td class="duration" data-value="28122159000">28.122</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_system_display_The_task_name_is_not_specified_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="2154018000">2.154</td>
+              <td class="duration" data-value="2154018000">2.154</td>
+              <td class="duration" data-value="2154018000">2.154</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_the_system_should_delete_the_checklist_item()</td>
+              <td>1</td>
+              <td class="duration" data-value="2007961700">2.007</td>
+              <td class="duration" data-value="2007961700">2.007</td>
+              <td class="duration" data-value="2007961700">2.007</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_user_can_add_a_checklist_item_by_clicking_on_the_add_button_or_checkmark()</td>
+              <td>1</td>
+              <td class="duration" data-value="4264250700">4.264</td>
+              <td class="duration" data-value="4264250700">4.264</td>
+              <td class="duration" data-value="4264250700">4.264</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_user_should_be_able_to_click_on_fire_icon(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2103964300">2.103</td>
+              <td class="duration" data-value="2103964300">2.103</td>
+              <td class="duration" data-value="2103964300">2.103</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.Hooks.setUp()</td>
+              <td>10</td>
+              <td class="duration" data-value="5591975170">5.591</td>
+              <td class="duration" data-value="5591975170">8.335</td>
+              <td class="duration" data-value="55919751700">55.919</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>10</td>
+              <td class="duration" data-value="2098437670">2.098</td>
+              <td class="duration" data-value="2098437670">8.262</td>
+              <td class="duration" data-value="20984376700">20.984</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>35</td>
+            <td>81</td>
+            <td class="duration">5.010</td>
+            <td class="duration">1:27.904</td>
+            <td class="duration">6:45.823</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

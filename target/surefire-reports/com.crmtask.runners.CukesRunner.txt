@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.crmtask.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 408.182 s <<< FAILURE! - in com.crmtask.runners.CukesRunner
+User should be able to send tasks(User should be able to assign tasks under Quick Navigate Menu)  Time elapsed: 60.919 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='pagetitle-item']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TT9B379', ip: '192.168.0.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4ae99bd838dcdeb9e17619ca3293930
+*** Element info: {Using=xpath, value=//*[@class='pagetitle-item']}
+
+User should not be able to add a new task if the input field is blank(User should be able to assign tasks under Quick Navigate Menu)  Time elapsed: 33.955 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[The task name is not specified.]>
+
+User should not be able to enter a overdue date(User should be able to assign tasks under Quick Navigate Menu)  Time elapsed: 67.85 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='task-detail-sidebar-item-delay-message-text']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TT9B379', ip: '192.168.0.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53902}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b7d2f2bf9446686822eda8a3a108faad
+*** Element info: {Using=xpath, value=//*[@class='task-detail-sidebar-item-delay-message-text']}
+

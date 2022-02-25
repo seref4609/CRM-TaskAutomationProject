@@ -1,0 +1,1361 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6156903100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2165898800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:27:44.185Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5381277700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "User click on the \"High Priority\" checkbox to set the current task to a top priority task.",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-click-on-the-\"high-priority\"-checkbox-to-set-the-current-task-to-a-top-priority-task.",
+        "after": [
+          {
+            "result": {
+              "duration": 1203698700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2221766500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on the \"High Priority\" checkbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"High Priority\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_checkbox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2078720900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify that user should be able to click on \"High Priority\" fire icon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"High Priority\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_user_should_be_able_to_click_on_fire_icon(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-01"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027USER_LOGIN\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-TT9B379\u0027, ip: \u0027192.168.0.239\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\HP\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:51014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bbff07a9ad6b8b48aed9f8bd86d4f780\n*** Element info: {Using\u003dname, value\u003dUSER_LOGIN}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\r\n\tat com.crmtask.pages.LoginPage.login(LoginPage.java:36)\r\n\tat com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login(CrmTaskDefs.java:27)\r\n\tat ✽.the user should be able to login(file:///C:/Users/HP/IdeaProjects/CRM-TaskAutomationProject/src/test/resources/features/Tasks.feature:6)\r\n",
+              "duration": 22071858300,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1995000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:28:03.673Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12309203400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User should be able to click on Visual Editor and see the editor text bar displays on top of the message box.",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-should-be-able-to-click-on-visual-editor-and-see-the-editor-text-bar-displays-on-top-of-the-message-box.",
+        "after": [
+          {
+            "embeddings": [
+              {
+                "data": "iVBORw0KGgoAAAANSUhEUgAAB4AAAANOCAYAAADwDxERAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3X+QluVhN/ovLOyjqJvYCRk7gaYN2GZApwOmTGD0LYxRORwRcxRMAyGpiq1K4w8mFnmboZy8Q7exSlLRHAVMQqAngnnNisdBUw+bxIG+Rtgmupuksq0O+06Z7DkyWXMYd8PC+QNYnmfZX8DKws3nM8PM3tdzP9dz3T+e+2Hu731d17BDhw4dCgAAAAAAAABnveFD3QAAAAAAAAAABocAGAAAAAAAAKAgBMAAAAAAAAAABSEABgAAAAAAACgIATAAAAAAAABAQQiAAQAAAAAAAApCAAwAAAAAAABQEAJgAAAAAAAAgIIQAAMAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAEBBCIABAAAAAAAACkIADAAAAAAAAFAQAmAAAAAAAACAghAAAwAAAAAAABSEABgAAAAAAACgIATAAAAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAQEEIgAEAAAAAAAAKQgAMAAAAAAAAUBACYAAAAAAAAICCEAADAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAAABSEABgAAAAAAACgIATAAAAAAAABAQQiAAQAAAAAAAApCAAwAAAAAAABQEAJgAAAAAAAAgIIQAAMAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAEBBCIABAAAAAAAACkIADAAAAAAAAFAQAmAAAAAAAACAghAAAwAAAAAAABSEABgAAAAAAACgIATAAAAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAQEEIgAEAAAAAAAAKQgAMAAAAAAAAUBACYAAAAAAAAICCEAADAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAAABSEABgAAAAAAACgIATAAAAAAAABAQQiAAQAAAAAAAApCAAwAAAAAAABQEAJgAAAAAAAAgIIQAAMAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAEBBCIABAAAAAAAACkIADAAAAAAAAFAQAmAAAAAAAACAghAAAwAAAAAAABSEABgAAAAAAACgIATAAAAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAQEEIgAEAAAAAAAAKQgAMAAAAAAAAUBACYAAAAAAAAICCEAADAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAAABSEABgAAAAAAACgIATAAAAAAAABAQQiAAQAAAAAAAApCAAwAAAAAAABQEAJgAAAAAAAAgIIQAAMAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAEBBCIABAAAAAAAACkIADAAAAAAAAFAQAmAAAAAAAACAghAAAwAAAAAAABSEABgAAAAAAACgIATAAAAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAQEEIgAEAAAAAAAAKQgAMAAAAAAAAUBACYAAAAAAAAICCEAADAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAAABSEABgAAAAAAACgIATAAAAAAAABAQQiAAQAAAAAAAApCAAwAAAAAAABQEAJgAAAAAAAAgIIQAAMAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAEBBCIABAAAAAAAACkIADAAAAAAAAFAQAmAAAAAAAACAghAAAwAAAAAAABSEABgAAAAAAACgIATAAAAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAQEEIgAEAAAAAAAAKQgAMAAAAAAAAUBACYAAAAAAAAICCEAADAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAAABSEABgAAAAAAACgIATAAAAAAAABAQQiAAQAAAAAAAApCAAwAAAAAAABQEAJgAAAAAAAAgIIQAAMAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAEBBCIABAAAAAAAACkIADAAAAAAAAFAQAmAAAAAAAACAghAAAwAAAAAAABSEABgAAAAAAACgIATAAAAAAAAAAAUhAAYAAAAAAAAoCAEwAAAAAAAAQEEIgAEAAAAAAAAKQgAMAAAAAAAAUBACYAAAAAAAAICCEAADAAAAAAAAFIQAGAAAAAAAAKAgBMAAAAAAAAAABSEABgAAAAAAACgIATAAAAAAAABAQQiAAQAAAAAAAApCAAwAAAAAAABQEAJgAAAAAAAAgIIQAAMAAAAAAAAUhAAYAAAAAAAA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BgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAi/gL7yc9ufPQESQAAAABJRU5ErkJggg\u003d\u003d",
+                "mime_type": "image/png",
+                "name": "screenshot"
+              }
+            ],
+            "result": {
+              "duration": 1397700600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4225800,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User click on Visual Editor",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.userClickOnVisualEditor()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Verify that the editor text bar displays on top of the message box.",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verifyThatTheEditorTextBarDisplaysOnTopOfTheMessageBox()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-02"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4982981200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2215374600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:28:39.518Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3088452500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User can add a checklist item by clicking on the add button or checkmark.",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-can-add-a-checklist-item-by-clicking-on-the-add-button-or-checkmark.",
+        "after": [
+          {
+            "result": {
+              "duration": 1271978100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2231410500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should be able to click on the \"Checklist\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checklist\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_should_be_able_to_click_on_the_button(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2527392200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User can add following \"checklistItem\" on Things to do",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"checklistItem\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_can_add_following_on_Things_to_do(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 258571900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User can add a checklist item by clicking on the checkmark.",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_can_add_a_checklist_item_by_clicking_on_the_checkmark()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4245660300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Verify that user can add a checklist item by clicking on the add button or checkmark.",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_user_can_add_a_checklist_item_by_clicking_on_the_add_button_or_checkmark()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-03"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5682879400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2152307700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:29:00.362Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3213289800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User can add separator lines between checklist items.",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-can-add-separator-lines-between-checklist-items.",
+        "after": [
+          {
+            "result": {
+              "duration": 1258255700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2239184200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should be able to click on the \"Checklist\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checklist\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_should_be_able_to_click_on_the_button(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2341685800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User  click on the \"separator\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"separator\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5008890800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Verify that  separator line display on the checklist items",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_separator_line_display_on_the_checklist_items()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-04"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6225551100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2127834100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:29:22.279Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3312256900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "User can delete a checklist item",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-can-delete-a-checklist-item",
+        "after": [
+          {
+            "result": {
+              "duration": 1284634600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2135588800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User should be able to click on the \"Checklist\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checklist\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_should_be_able_to_click_on_the_button(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2615228600,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User can add checklistItem on Things to do",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_can_add_checklistItem_on_Things_to_do()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 265242300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User can add a checklist item by clicking on the checkmark.",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_can_add_a_checklist_item_by_clicking_on_the_checkmark()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2501675800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User can click the delete mark",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_can_click_the_delete_mark()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2011572500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify that the system should delete  the checklist item",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_the_system_should_delete_the_checklist_item()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-05"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5031495500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2168987800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:29:44.780Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3094574900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "User can add Deadline, Time Planning by using date pickers",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-can-add-deadline--time-planning-by-using-date-pickers",
+        "after": [
+          {
+            "result": {
+              "duration": 1178225800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 209950900,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User  click the \"Time planning\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Time planning\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_button(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 252903200,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User  click the deadlinebox",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_deadlinebox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2652228700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User  select date by using date pickers",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_select_date_by_using_date_pickers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129792200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User click  the StarttaskBox",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_StarttaskBox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119282900,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User click the dateStart",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_dateStart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81829800,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User seleckt start",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_seleckt_start()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153142200,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User click  the Finish  box",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_Finish_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2295104800,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User click the dateFinish",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_dateFinish()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-06"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4899296700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2192151700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:30:02.167Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2825584800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "User should be able to send tasks",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-should-be-able-to-send-tasks",
+        "after": [
+          {
+            "result": {
+              "duration": 1183171300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5336550400,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User enter  a title on Things to do message box",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_enter_a_title_on_Things_to_do_message_box()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3168966200,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "click to send button",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.click_to_send_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5640662000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User  click  VIEW TASK",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_VIEW_TASK()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8119857000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Verify that message display on pagetitle",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_message_display_on_pagetitle()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-07"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5541250800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2172832100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:30:35.551Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2944418800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "User should not be able to add a new task if the input field is blank",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-should-not-be-able-to-add-a-new-task-if-the-input-field-is-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 1239582100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 315370000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User clean the input field",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_clean_the_input_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3167896900,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "click to send button",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.click_to_send_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2619887700,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "Verify that system display The task name is not specified message",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_system_display_The_task_name_is_not_specified_message()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-08"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5512704700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2135596000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:30:53.568Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3794459500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 69,
+        "name": "User should be able to enter a text into the input field.",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-should-be-able-to-enter-a-text-into-the-input-field.",
+        "after": [
+          {
+            "result": {
+              "duration": 1197055800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5315363000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User enter  a title on Things to do message box",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_enter_a_title_on_Things_to_do_message_box()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3161404700,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "click to send button",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.click_to_send_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7093279700,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "Verify that Task has been created",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verifyThatTaskHasBeenCreated()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-09"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5923522400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2133487900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"TASK\" button under Quick Navigate Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TASK\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_on_the_button_under_Quick_Navigate_Menu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T23:31:21.797Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3221287300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 75,
+        "name": "User should not be able to enter a overdue date",
+        "description": "",
+        "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu;user-should-not-be-able-to-enter-a-overdue-date",
+        "after": [
+          {
+            "result": {
+              "duration": 1184388000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crmtask.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5340444200,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "User enter  a title on Things to do message box",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_enter_a_title_on_Things_to_do_message_box()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 201002000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "User  click the deadlinebox",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_the_deadlinebox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 575954700,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "User  select overdue date by using date pickers",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_select_overdue_date_by_using_date_pickers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 157342900,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User click  overdateSelect",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_overdateSelect()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3162060200,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "click to send button",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.click_to_send_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5424088400,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "User  click  VIEW TASK",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.user_click_VIEW_TASK()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8105178800,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "Verify that system date Task is overdue! message",
+            "match": {
+              "location": "com.crmtask.stepdefinitions.CrmTaskDefs.verify_that_system_date_Task_is_overdue_message()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US016TC-10"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to assign tasks under Quick Navigate Menu",
+    "description": "",
+    "id": "user-should-be-able-to-assign-tasks-under-quick-navigate-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Tasks.feature",
+    "tags": []
+  }
+]
